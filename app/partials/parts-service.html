@@ -5,22 +5,40 @@
 </div>
 <div class="row">
     <div class="col-lg-6">
-        <h4>Enter Date of Service (mm/dd/yyyy)</h4>
+        <h4>Car Make</h4>
         <div class="input-group col-lg-12">
-            <input type="text" class="form-control search-bar" placeholder="Date" aria-describedby="service-date">
+            <input type="text" class="form-control search-bar" placeholder="Car Make" aria-describedby="Car Make">
         </div>
     </div>
     <div class="col-lg-6">
-        <h4>Enter Service Reason</h4>
+        <h4>Car Model</h4>
         <div class="input-group col-lg-12">
-            <input type="text" class="form-control search-bar" placeholder="What seems to be the problem?" aria-describedby="service-reason">
+            <input type="text" class="form-control search-bar" placeholder="Car Model" aria-describedby="Car Model">
         </div>
     </div>
-</div>
-
+    <div class="col-lg-6">
+        <h4>Car Year</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Car Year" aria-describedby="Car Year">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h4>VIN</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="VIN" aria-describedby="VIN">
+        </div>
+<div class="suggest">
+        <h3> Suggested Services</h3>
+    </div>
+    <form action="/action_page.php" method="get">
+        <input type="checkbox" name="Suggested Service" value="Oil Change"> Oil Change<br>
+        <input type="checkbox" name="Suggested Service" value="5K Mileage Service" >5K Mileage Service<br>
+        <input type="checkbox" name="Suggested Service" value="Factory Recalls" >Factory Recalls<br>
+        <input type="text" name="Suggested Service" value="Other" ><br>
+    </form>
 <div class="row submit-button">
     <div class="col-lg-6">
-        <button type="button" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-success" ng-click="go('/thankyou')">Submit</button>
     </div>
 </div>
 
