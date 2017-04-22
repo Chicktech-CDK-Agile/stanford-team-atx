@@ -1121,6 +1121,9 @@ div.art-block img
    line-height:0;
    margin-left: -13px;
 }
+.suggest {
+   text-align: left
+}
 .opera .art-block ul>li:before
 {
    /* Vertical-align:middle in Opera doesn't need additional offset */

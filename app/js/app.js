@@ -11,7 +11,8 @@ angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'ui.bootstrap.tpls', 'ui.boo
         $routeProvider.when('/offers', {templateUrl: 'app/partials/offers.html', controller: 'OffersCtrl'});
         $routeProvider.when('/accessories', {templateUrl: 'app/partials/accessories.html', controller: 'AccessoriesCtrl'});
         $routeProvider.when('/partsandservice', {templateUrl: 'app/partials/parts-service.html', controller: 'PartsAndServiceCtrl'});
-        $routeProvider.otherwise({redirectTo: '/home'});
+        $routeProvider.when('/thankyou', {templateUrl: 'app/partials/thankyou.html', controller: 'ThankYouCtrl'});
+    $routeProvider.otherwise({redirectTo: '/home'});
     }])
     .constant('CONFIGURL', 'https://resplendent-fire-8954.firebaseio.com')
     .factory('getVehiclesFirebaseStore', ['$firebaseObject', 'CONFIGURL', function($firebaseObject, CONFIGURL) {

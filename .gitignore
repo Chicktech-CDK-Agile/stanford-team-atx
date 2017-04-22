@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 projectFilesBackup/*
 .idea/workspace.xml
+=======
+
+projectFilesBackup/*
+>>>>>>> cbfd39035b88249619b76f36601b5ce8402c1606
 .idea/*
+workspace.xml
